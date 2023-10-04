@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-offices Application</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+        <div class="content">
+                <div class="details-row">
+                  <p>IP Address: <span id="ip-address">Loading...</span></p>
+                  <p>City: <span id="city">Loading...</span></p>
+                  <p>Region: <span id="region">Loading...</span></p>
+                </div>
+                <div class="details-row">
+                  <p>Organisation: <span id="organization">Loading...</span></p>
+                  <p>Hostname: <span id="hostname">Loading...</span></p>
+                </div>
+                <div class="details-row">
+                  <p>Lat / Lon: <span id="latitude">Loading...</span> / <span id="longitude">Loading...</span></p>
+                </div>
+              </div>
+
+              <div class="frame">
+                <p>Your Current Location</p>
+                <iframe id="map-iframe" width="360" height="270" frameborder="0" style="border:0"></iframe>
+              </div>
+
+              <div class="MoreInfo">
+                <h1>More Information About You</h1>
+              </div>
+              
+              <div class="pincode">
+                <p>Pincode: <span id="pincode">Loading...</span></p>
+              </div>
+
+              <div class="time-and-message">
+                <p id="timezone">Time Zone: Loading...</p>
+                <p id="datetime">Date & Time: Loading...</p>
+                <p id="pincode-info">No. of pincode found: Loading...</p>
+              </div>
+
+              <div class="MoreInfo">
+                <h1>Post Offices Near You</h1>
+              </div>
+              
+              <div class="search-container">
+                <label for="search-input"></label>
+                <input type="text" id="search-input" placeholder="Search by name or branch office" onkeyup="searchPostOffices()">
+              </div>
+              
+              <div class="post-offices" id="post-offices">
+                Loading post offices...
+              </div>
+
+              <footer>
+                <p>&copy; 2023 Made with ❤️ by Vishal Pandey. All rights reserved.</p>
+              </footer>
+
+  <script src="details_script.js"></script>
+</body>
+</html>
